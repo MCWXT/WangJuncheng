@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.tailwindcss.com" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" src="cdn_modules/phaser@3.90.0/phaser.min.js"></script>
+  <script src="main.js" type="module" charset="utf-8"></script>
+  <title>Xcraft</title>
+</head>
+<script>
+  let MoveX;
+  let MoveY;
+  const moveX = (target) => MoveX = target;
+  const stopX = () => MoveX = undefined;
+  const moveY = (target) => MoveY = target;
+  const stopY = () => MoveY = undefined;
+</script>
+
+<body>
+  <div>
+    
+  </div>
+  <div class="fixed bottom-0 mx-20 select-none">
+    <button class="p-2 mx-1 rounded-md bg-black text-white size-12" ontouchstart="moveX('left')" ontouchend="stopX()" type="submit">←</button>
+    <button class="p-2 mx-1 rounded-md bg-black text-white size-12" ontouchstart="moveY('up')" ontouchend="stopY()" type="submit">↑</button>
+    <button class="p-2 mx-1 rounded-md bg-black text-white size-12" ontouchstart="moveX('right')" ontouchend="stopX()" type="submit">→</button>
+  </div>
+</body>
+
+</html>
